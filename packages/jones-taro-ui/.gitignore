@@ -1,0 +1,31 @@
+# Editor-specific
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.settings
+.vscode
+
+# Installed libs
+node_modules/
+typings/
+
+# Generated
+tmp/
+coverage/
+img/
+spec-js/
+spec-build/
+.out/
+.tmp/
+.rn_temp/
+dist/
+es/
+types/
+deploy_versions/
+
+# Misc
+npm-debug.log
+.DS_STORE
+*.tgz
+.eslintcache

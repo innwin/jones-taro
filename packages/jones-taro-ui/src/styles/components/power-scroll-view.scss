@@ -1,0 +1,23 @@
+.power-scroll-view {
+  // overflow: hidden;
+  user-select: none;
+  // height: 100%;
+
+  &__track {
+    position: relative;
+    min-height: 100%;
+    transition-property: transform;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(-100%);
+    height: $power-scroll-pull-head-height;
+  }
+}

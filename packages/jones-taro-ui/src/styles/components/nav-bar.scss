@@ -1,0 +1,74 @@
+.nav-bar {
+  height: $nav-bar-height;
+  color: $nav-bar-color;
+  background: $nav-bar-background;
+  box-shadow: $nav-bar-box-shadow;
+  font-size: $nav-bar-font-size;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &-padding-side {
+    padding-left: $nav-bar-padding-side;
+    padding-right: $nav-bar-padding-side;
+  }
+
+  &-border {
+    border-bottom: $nav-bar-border;
+  }
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &-safe-area-inset-top {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .content {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    color: $nav-bar-title-color;
+    font-size: $nav-bar-title-font-size;
+    font-weight: $nav-bar-title-font-weight;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+}

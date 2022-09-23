@@ -1,0 +1,20 @@
+@import "jones-bootstrap-lite/scss/variables";
+
+/**
+ * 组件变量
+ */
+
+/* NavBar */
+$nav-bar-height: 88px !default;
+$nav-bar-color: $text-muted !default;
+$nav-bar-background: $white !default;
+$nav-bar-padding-side: 16px !default;
+$nav-bar-border: 1px solid $gray-200;
+$nav-bar-box-shadow: 0px 1px 7px 0px rgba(237, 238, 241, 1) !default;
+$nav-bar-font-size: 28px !default;
+$nav-bar-title-color: $nav-bar-color !default;
+$nav-bar-title-font-size: $nav-bar-font-size !default;
+$nav-bar-title-font-weight: 500 !default;
+
+/* PowerScrollView */
+$power-scroll-pull-head-height: 120px;

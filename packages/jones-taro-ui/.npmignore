@@ -1,0 +1,11 @@
+# Editor-specific
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.settings
+.vscode
+
+src
+tsconfig.json
+tslint.json
