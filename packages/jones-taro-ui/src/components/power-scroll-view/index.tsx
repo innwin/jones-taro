@@ -27,6 +27,7 @@ interface PullRefreshProps {
   pullDistance?: number | string
   successDuration?: number | string
   animationDuration?: number | string
+  isUseCustomWrapper?: boolean
   pullRefreshLayoutAdapter?: PullRefreshLayoutAdapter
 }
 
@@ -107,6 +108,7 @@ export function PowerScrollView<T extends number | undefined>(
     disabled,
     pullDistance = props.refresherThreshold || props.pullDistance,
     onRefresh,
+    isUseCustomWrapper = false,
     pullRefreshLayoutAdapter,
     children,
     onLoadMore,
@@ -482,7 +484,7 @@ export function PowerScrollView<T extends number | undefined>(
     </View>
   )
   const headElement =
-    process.env.TARO_ENV === 'weapp' ? (
+    isUseCustomWrapper && process.env.TARO_ENV === 'weapp' ? (
       <CustomWrapper>{renderStatusBody}</CustomWrapper>
     ) : (
       renderStatusBody

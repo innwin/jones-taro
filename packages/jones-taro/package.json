@@ -1,6 +1,6 @@
 {
-  "name": "jones-taro",
-  "version": "1.2.3",
+  "name": "@jonests/taro",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
@@ -8,7 +8,7 @@
     "test": "jest --config jestconfig.json",
     "lint": "tslint -p tsconfig.json",
     "build": "rm -fr ./dist ./types && tsc",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/innwin/jones-taro/tree/main/packages/jones-taro#readme",
   "dependencies": {
-    "jones-client": "^1.0.0",
-    "jones-ts": "^1.0.1"
+    "@jonests/client": "^1.0.0",
+    "@jonests/core": "^1.0.0"
   },
   "devDependencies": {
     "@tarojs/taro": "^3.5.5",

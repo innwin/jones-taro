@@ -1,6 +1,6 @@
 {
-  "name": "jones-taro-ui",
-  "version": "1.1.2",
+  "name": "@jonests/taro-ui",
+  "version": "1.0.2",
   "description": "",
   "browser": "./dist/index.umd.js",
   "module": "./dist/index.esm.js",
@@ -38,8 +38,8 @@
   },
   "homepage": "https://github.com/innwin/jones-taro/tree/main/packages/jones-taro-ui#readme",
   "peerDependencies": {
-    "jones-bootstrap-lite": "^1.3.0",
-    "jones-ts": "^1.1.0"
+    "@jonests/bootstrap-lite": "^1.0.0",
+    "@jonests/core": "^1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",

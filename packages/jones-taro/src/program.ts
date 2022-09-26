@@ -1,5 +1,5 @@
-import {ILogger, IObjectContainerRegister} from "jones-ts";
-import {IDialogService, IStorage, IToastService} from "jones-client";
+import {ILogger, IObjectContainerRegister} from "@jonests/core";
+import {IDialogService, IStorage, IToastService} from "@jonests/client";
 import {TYPE} from "./TYPE";
 import {Logger} from "./service/logger";
 import {ToastService} from "./service/toastService";

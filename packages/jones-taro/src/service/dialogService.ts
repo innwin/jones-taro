@@ -1,6 +1,6 @@
 import {showModal, showActionSheet} from "@tarojs/taro";
-import {Ioc} from "jones-ts";
-import {ActionSheet, Dialog, IDialogService} from "jones-client";
+import {Ioc} from "@jonests/core";
+import {ActionSheet, Dialog, IDialogService} from "@jonests/client";
 import {TYPE} from "../TYPE";
 
 export class DialogService implements IDialogService {

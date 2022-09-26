@@ -1,5 +1,5 @@
 import {getLogManager} from "@tarojs/taro";
-import {ILogger, Ioc} from "jones-ts";
+import {ILogger, Ioc} from "@jonests/core";
 import {TYPE} from "../TYPE";
 
 export class Logger implements ILogger {

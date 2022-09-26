@@ -1,6 +1,6 @@
 import {clearStorageSync, getStorageSync, removeStorageSync, setStorageSync} from "@tarojs/taro";
-import {Ioc} from "jones-ts";
-import {IStorage} from "jones-client";
+import {Ioc} from "@jonests/core";
+import {IStorage} from "@jonests/client";
 import {TYPE} from "../TYPE";
 
 export class Storage implements IStorage {

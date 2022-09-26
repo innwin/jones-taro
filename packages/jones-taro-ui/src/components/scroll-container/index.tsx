@@ -1,5 +1,5 @@
 import {ReactNode} from "react";
-import {EmptyState, ResultFailure} from "jones-ts";
+import {EmptyState, ResultFailure} from "@jonests/core";
 import {
   LoadMoreLayoutAdapter,
   LoadMoreLayoutConfig,
@@ -19,6 +19,7 @@ type ScrollContainerProps = {
   isHasMore?: boolean;
   refresh?(): Promise<any>;
   loadMore?(): Promise<any>;
+  isUseCustomWrapper?: boolean;
   emptyLayoutAdapter?: EmptyLayoutAdapter;
   pullRefreshLayoutAdapter?: PullRefreshLayoutAdapter;
   loadMoreLayoutAdapter?: LoadMoreLayoutAdapter;
@@ -28,6 +29,7 @@ export function ScrollContainer(
   {
     initView, children, className, isRefreshing, isLoadingMore, emptyState, isHasMore, refresh, loadMore,
     emptyLayoutAdapter,
+    isUseCustomWrapper = false,
     pullRefreshLayoutAdapter = PullRefreshLayoutConfig.get().adapter,
     loadMoreLayoutAdapter = LoadMoreLayoutConfig.get().adapter,
   }: ScrollContainerProps) {
@@ -49,6 +51,7 @@ export function ScrollContainer(
       current={emptyState?.isHasContent() == true ? 1 : 0}
       isFinished={!isHasMore}
       isShowFinishedLayout={loadMore != null}
+      isUseCustomWrapper={isUseCustomWrapper}
       pullRefreshLayoutAdapter={pullRefreshLayoutAdapter}
       loadMoreLayoutAdapter={loadMoreLayoutAdapter}
       onRefresh={refresh}

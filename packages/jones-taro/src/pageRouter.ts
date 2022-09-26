@@ -1,4 +1,4 @@
-import {QueryParameter} from "jones-ts";
+import {QueryParameter} from "@jonests/core";
 import {navigateTo, redirectTo, reLaunch, switchTab} from "@tarojs/taro";
 
 const paramsUselessKeys = ["package", "path"];

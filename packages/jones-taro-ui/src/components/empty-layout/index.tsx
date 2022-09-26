@@ -7,7 +7,7 @@ import {
   EmptyStateEmptyFailure,
   EmptyStateEmptyLoading,
   EmptyStateHasContent
-} from "jones-ts";
+} from "@jonests/core";
 
 export interface EmptyLayoutAdapter {
   createLoadingView(emptyLoading: EmptyLoading): ReactNode;

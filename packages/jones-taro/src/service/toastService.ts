@@ -1,6 +1,6 @@
 import {showToast, hideToast, showLoading, hideLoading} from "@tarojs/taro";
-import {Ioc} from "jones-ts";
-import {IToastService} from "jones-client";
+import {Ioc} from "@jonests/core";
+import {IToastService} from "@jonests/client";
 import {TYPE} from "../TYPE";
 
 export class ToastService implements IToastService {
